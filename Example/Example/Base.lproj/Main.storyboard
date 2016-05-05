@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIImageView+FadeInFadeOut" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qpf-aO-bbl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.90066105770000005" green="0.76394361180000003" blue="0.80340831469999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="k1m-1j-ASR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N5L-Wc-zEg">
+                                <rect key="frame" x="52.5" y="73" width="270" height="204"/>
+                                <color key="backgroundColor" red="0.75366586540000002" green="0.63926181589999997" blue="0.67228555909999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="IWJ-xd-ZSy"/>
+                                    <constraint firstAttribute="height" constant="204" id="bfI-ct-bZE"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZY5-iC-k7V">
+                                <rect key="frame" x="52" y="357" width="270" height="30"/>
+                                <color key="backgroundColor" red="0.68987238220000002" green="0.17317810140000001" blue="0.069690255800000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="刷新 reload">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reloadButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="is3-AV-GHE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Qpf-aO-bbl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="OnX-nR-UBe"/>
+                            <constraint firstAttribute="trailing" secondItem="Qpf-aO-bbl" secondAttribute="trailing" id="Xje-Kc-X90"/>
+                            <constraint firstItem="N5L-Wc-zEg" firstAttribute="top" secondItem="Qpf-aO-bbl" secondAttribute="bottom" constant="23" id="fdN-sK-Ozy"/>
+                            <constraint firstItem="N5L-Wc-zEg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jhE-Il-zQ3"/>
+                            <constraint firstItem="Qpf-aO-bbl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="njA-ky-qZ8"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="imgView" destination="N5L-Wc-zEg" id="KQ7-23-F9r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162.5" y="338.5"/>
+        </scene>
+    </scenes>
+</document>
