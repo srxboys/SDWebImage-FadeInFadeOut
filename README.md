@@ -12,7 +12,6 @@
 - (void)sd_setImageFIFOWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder options:(SDWebImageOptions)options animateWithDuration:(CGFloat)duration;
 ```
 -
-####效果图(如下):
-[![FadeInFadeOut]](https://github.com/srxboys)  
-[FadeInFadeOut]:https://github.com/srxboys/SDWebImage-FadeInFadeOut/blob/master/Example/Example/UIImageView%2BFadeInFadeOut.gif  "srxboys"  
+####效果图(如下): <br>
+![[FadeInFadeOut_srxboys](https://github.com/srxboys)](https://github.com/srxboys/SDWebImage-FadeInFadeOut/blob/master/Example/Example/UIImageView+FadeInFadeOut.gif?raw=true)
 
